@@ -46,7 +46,7 @@ function CurrencyCard({
         type="number"
         value={amount}
                     onChange={(e) => {
-                       onAmountchange && onAmountchange(Number(e.target.value))
+                       onAmountchange && onAmountchange(e.target.value)
                     }}
                     disabled = {amountdisabled}
         className="w-full bg-transparent text-3xl font-semibold outline-none"

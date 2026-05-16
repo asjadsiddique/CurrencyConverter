@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     if (!rates?.[to]) return;
-
+       
     const result = amount * rates[to];
     setConvertedAmount(Number(result.toFixed(2)));
   }, [amount, from, to, rates]);
